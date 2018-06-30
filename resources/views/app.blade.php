@@ -11,7 +11,7 @@
         <meta name="description" content="jQuery Datatables API for Laravel 4 and Laravel 5">
     @endif
 
-    <title>Laravel Datatables {{ isset($title) ? " | $title" : "" }}</title>
+    <title>二级物料SPCN测试项目 {{ isset($title) ? " | $title" : "" }}</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/demo.css') }}" rel="stylesheet">
@@ -44,7 +44,7 @@
             </button>
             <a class="navbar-brand" href="{{ url('/') }}">
                 <span class="dt-icon"><i class="fa fa-th-list"></i></span>
-                Laravel Datatables</a>
+                SPCN</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

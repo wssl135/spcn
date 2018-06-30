@@ -1,10 +1,6 @@
 <div class="search-box">
     <input id="search-filter" type="text" name="keyword" placeholder="Search ..">
 </div>
-<br>
-<div class="panel panel-info">
-    @include('partials.ads',['slot'=>env('ADS_SLOT'),'format'=>null, 'style'=>'display:inline-block;min-width:237px;max-width:237px;width:100%;height:90px;'])
-</div>
 <ul class="sidebar-menu-container">
     <li>
         <a class="sidebar-list-title block" data-toggle="collapse" data-target="#tutorials">Tutorials</a>

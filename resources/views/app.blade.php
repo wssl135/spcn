@@ -76,34 +76,10 @@
     <div class="row">
         <div class="col-sm-3 main">
             @include('partials.sidebar-menu')
-            <br>
-            @include('donate')
-            <br>
-            <div class="panel panel-info">
-                @include('partials.ads',[
-                    'client' => env('ADS_YAJRA_CLIENT'),
-                    'slot'  => env('ADS_YAJRA_SLOT_BOX'),
-                    'format'=>'auto',
-                    'style'=>'display:block;'
-                ])
-            </div>
         </div>
         <div class="col-sm-9 main">
-            @include('partials.ads',[
-                'slot'=>env('ADS_VERTICAL_SLOT'),
-                'format'=>'auto',
-                'style'=>'display:block;'
-            ])
             <div class="col-md-12">
                 @yield('content')
-                <hr>
-                @include('partials.ads',[
-                    'client' => env('ADS_YAJRA_CLIENT'),
-                    'slot'  => env('ADS_YAJRA_SLOT'),
-                    'format'=>'auto',
-                    'style'=>'display:block;'
-                ])
-                <hr>
                 <div id="disqus_thread"></div>
             </div>
         </div>

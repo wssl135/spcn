@@ -85,8 +85,6 @@ return Datatables::of(User::all())->make(true);
 	</div>
     <div class="col-md-3">
         <div class="row">
-            @include('donate')
-            <br>
             @include('partials.quick-links')
             <br>
             @include('partials.ads',[

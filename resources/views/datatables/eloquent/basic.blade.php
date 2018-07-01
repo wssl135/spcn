@@ -4,20 +4,19 @@
 <table id="users-table" class="table table-condensed">
     <caption class="alert alert-success">
         <p>
-            <strong>IMPORTANT: </strong>When using <strong>make()</strong>, the package will rely filtering and sorting based on the index/arrangement of your select query.
-        </p>
-        <br>
-        <p>
-            <strong>NEVER USE SELECT(*)</strong> when using this approach or your DataTables filtering/sorting may not work properly.
+            <strong>重要提醒: </strong>SPCN需满足华为对应技术规范性能要求及产品整机可靠性测试要求。
         </p>
     </caption>
     <thead>
     <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Created At</th>
-        <th>Updated At</th>
+        <th rowspan="2" style="text-align: center; vertical-align: middle;">序号</th>
+        <th rowspan="2" style="text-align: center; vertical-align: middle;">分类</th>
+        <th colspan="4" style="text-align: center;">技术规范可靠性要求</th>
+    </tr>
+    <tr>
+        <th style="text-align: center;">可靠性测试项</th>
+        <th style="text-align: center;">测试报告要求（是否需要第三方报告）</th>
+        <th style="text-align: center;">测试方法及判定标准</th>
     </tr>
     </thead>
 </table>
@@ -41,7 +40,7 @@
     $(function() {
         $('#users-table').DataTable({
             processing: true,
-            searching: false,
+            searching: true,
             serverSide: true,
             aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
             ajax: '{{ url("eloquent/basic-data") }}'

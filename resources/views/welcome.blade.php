@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-9">
 		<h1>二级物料SPCN测试项目</h1>
-		<h2>Datatables Package for Laravel 4.2|5.x</h2>
+		<h2>SPCN需满足华为对应技术规范性能要求及产品整机可靠性测试要求。</h2>
         <p>
             <a href="http://laravel.com"><img src="https://camo.githubusercontent.com/ce4e055c2882418102cdafd25deec501a0084509/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c61726176656c2d342e32253743352e782d6f72616e67652e737667" alt="Laravel 4.2|5.x" data-canonical-src="https://img.shields.io/badge/Laravel-4.2%7C5.x-orange.svg" style="max-width:100%;"></a>
             <a href="https://packagist.org/packages/yajra/laravel-datatables-oracle"><img src="https://camo.githubusercontent.com/d898c7f939eac02bf772378e02ac69e075985fb1/68747470733a2f2f706f7365722e707567782e6f72672f79616a72612f6c61726176656c2d646174617461626c65732d6f7261636c652f762f737461626c65" alt="Latest Stable Version" data-canonical-src="https://poser.pugx.org/yajra/laravel-datatables-oracle/v/stable" style="max-width:100%;"></a>

@@ -52,7 +52,6 @@
                 <li><a href="https://github.com/yajra/laravel-datatables"><strong><i class="fa fa-github"></i>
                             测试项目分类</strong></a></li>
                 <li><a href="https://yajrabox.com/docs/laravel-datatables/6.0"><strong>Documentation</strong></a></li>
-                <li><a href="https://www.patreon.com/bePatron?u=4521203"><strong>Become a Patreon</strong></a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right navbar-custom">

@@ -1,22 +1,18 @@
 @extends('app')
 
 @section('content')
-<h1 class="" style="">{{ $controller . ' - ' .$title }}</h1>
+<h1 class="" style="">{{ $title }}</h1>
 <div class="tabs">
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
-        <li><a data-toggle="tab" href="#code">Source Code</a></li>
+        <li class="active"><a data-toggle="tab" href="#tech">技术规范可靠性要求</a></li>
+        <li><a data-toggle="tab" href="#product">产品整机集成可靠性要求</a></li>
     </ul>
     <div class="tab-content">
-         <div class="tab-pane active" id="demo">
-            @yield('demo')
+         <div class="tab-pane active" id="tech">
+            @yield('tech')
         </div>
-        <div class="tab-pane" id="code">
-            <h3 class="lead">{{ $controller  }}</h3>
-            <pre><code>@yield('controller')</code></pre>
-            <h3 class="lead">Javascript</h3>
-            <pre><code>@yield('js')</code></pre>
-            @yield('extra')
+        <div class="tab-pane" id="product">
+            @yield('product')
         </div>
     </div>
 </div>

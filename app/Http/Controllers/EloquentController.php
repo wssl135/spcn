@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Post;
 use App\User;
+use App\Locker;
 use Collective\Html\FormBuilder;
 use Illuminate\Http\Request;
 use DB;
@@ -15,8 +16,8 @@ class EloquentController extends Controller
     public function __construct()
     {
         //$this->middleware('auth');
-        view()->share('controller', 'EloquentController.php');
-        view()->share('title', $this->getTitle('eloquent'));
+        //view()->share('controller', 'EloquentController.php');
+        //view()->share('title', $this->getTitle('eloquent'));
         view()->share('description', $this->getDescription('eloquent'));
     }
 
@@ -27,7 +28,7 @@ class EloquentController extends Controller
 
     public function getBasic()
     {
-        return view('datatables.eloquent.basic');
+        return view('datatables.eloquent.basic')->with('title', 'L-01/02门锁可靠性要求');
     }
 
     public function getBasicData()
@@ -39,6 +40,13 @@ class EloquentController extends Controller
             ->make();
     }
 
+    public function getProductData()
+    {
+        $products = Locker::select(['id', 'type', 'test_items', 'is_report', 'test_rules']);
+
+        return Datatables::of($products)
+            ->make();
+    }
     public function getMaster()
     {
         return view('datatables.eloquent.master');

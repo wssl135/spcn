@@ -1,6 +1,6 @@
 @extends('datatables.template')
 
-@section('demo')
+@section('tech')
 <table id="users-table" class="table table-condensed">
     <caption class="alert alert-success">
         <p>
@@ -22,18 +22,31 @@
 </table>
 @endsection
 
-@section('controller')
-    public function getBasic()
-    {
-        return view('datatables.eloquent.basic');
-    }
-
-    public function getBasicData()
-    {
-        $users = User::select(['id','name','email','created_at','updated_at']);
-
-        return Datatables::of($users)->make();
-    }
+@section('product')
+<style type="text/css"> 
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+</style>
+<table id="product-table" class="table table-condensed">
+    <caption class="alert alert-success">
+        <p>
+            <strong>重要提醒: </strong>SPCN需满足华为对应技术规范性能要求及产品整机可靠性测试要求。
+        </p>
+    </caption>
+    <thead>
+    <tr>
+        <th rowspan="2" style="text-align: center; vertical-align: middle;">序号</th>
+        <th rowspan="2" style="text-align: center; vertical-align: middle;">分类</th>
+        <th colspan="4" style="text-align: center;">产品整机集成可靠性要求</th>
+    </tr>
+    <tr>
+        <th style="text-align: center;">产品整机集成可靠性测试项</th>
+        <th style="text-align: center;">参考标准或测试方法</th>
+        <th style="text-align: center;">判定标准</th>
+    </tr>
+    </thead>
+</table>
 @endsection
 
 @section('js')
@@ -44,6 +57,14 @@
             serverSide: true,
             aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
             ajax: '{{ url("eloquent/basic-data") }}'
+        });
+        $('#product-table').DataTable({
+            processing: true,
+            searching: true,
+            serverSide: true,
+            bLengthChange: true,
+            aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
+            ajax: '{{ url("eloquent/product-data") }}'
         });
     });
 @endsection

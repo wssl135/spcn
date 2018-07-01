@@ -14,6 +14,7 @@ class EloquentController extends Controller
 {
     public function __construct()
     {
+        //$this->middleware('auth');
         view()->share('controller', 'EloquentController.php');
         view()->share('title', $this->getTitle('eloquent'));
         view()->share('description', $this->getDescription('eloquent'));

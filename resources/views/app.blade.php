@@ -44,13 +44,13 @@
             </button>
             <a class="navbar-brand" href="{{ url('/') }}">
                 <span class="dt-icon"><i class="fa fa-th-list"></i></span>
-                SPCN</a>
+                二级物料测试项目</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="https://github.com/yajra/laravel-datatables"><strong><i class="fa fa-github"></i>
-                            Github</strong></a></li>
+                            测试项目分类</strong></a></li>
                 <li><a href="https://yajrabox.com/docs/laravel-datatables/6.0"><strong>Documentation</strong></a></li>
                 <li><a href="https://www.patreon.com/bePatron?u=4521203"><strong>Become a Patreon</strong></a></li>
             </ul>
@@ -74,10 +74,10 @@
 </nav>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 main">
+        <div class="col-sm-2 main">
             @include('partials.sidebar-menu')
         </div>
-        <div class="col-sm-9 main">
+        <div class="col-sm-10 main">
             <div class="col-md-12">
                 @yield('content')
                 <div id="disqus_thread"></div>

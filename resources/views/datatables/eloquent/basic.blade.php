@@ -41,7 +41,9 @@
     $(function() {
         $('#users-table').DataTable({
             processing: true,
+            searching: false,
             serverSide: true,
+            aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
             ajax: '{{ url("eloquent/basic-data") }}'
         });
     });

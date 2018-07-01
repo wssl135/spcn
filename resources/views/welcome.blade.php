@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-9">
-		<h1>Laravel DataTables Demo Application</h1>
+		<h1>二级物料SPCN测试项目</h1>
 		<h2>Datatables Package for Laravel 4.2|5.x</h2>
         <p>
             <a href="http://laravel.com"><img src="https://camo.githubusercontent.com/ce4e055c2882418102cdafd25deec501a0084509/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c61726176656c2d342e32253743352e782d6f72616e67652e737667" alt="Laravel 4.2|5.x" data-canonical-src="https://img.shields.io/badge/Laravel-4.2%7C5.x-orange.svg" style="max-width:100%;"></a>
@@ -86,13 +86,6 @@ return Datatables::of(User::all())->make(true);
     <div class="col-md-3">
         <div class="row">
             @include('partials.quick-links')
-            <br>
-            @include('partials.ads',[
-                'slot'=>env('ADS_VERTICAL_SLOT'),
-                'format'=>'auto',
-                'style'=>'display:block;'
-            ])
-            <br>
         </div>
     </div>
 </div>

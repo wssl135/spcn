@@ -31,7 +31,7 @@ class EloquentController extends Controller
      */
     public function getL0102Locker()
     {
-        return view('datatables.eloquent.L0102Locker')->with('title', 'L-01/02门锁可靠性要求');
+        return view('datatables.eloquent.l0102Locker')->with('title', 'L-01/02门锁可靠性要求');
     }
 
     public function getL0102LockerData()

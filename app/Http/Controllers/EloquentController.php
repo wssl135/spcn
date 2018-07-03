@@ -31,7 +31,7 @@ class EloquentController extends Controller
      */
     public function getL0102Locker()
     {
-        return view('datatables.eloquent.l0102Locker')->with('title', 'L-01/02门锁可靠性要求');
+        return view('datatables.eloquent.l0102locker')->with('title', 'L-01/02门锁可靠性要求');
     }
 
     public function getL0102LockerData()
@@ -59,7 +59,7 @@ class EloquentController extends Controller
      */
     public function getL21Locker()
     {
-        return view('datatables.eloquent.L21Locker')->with('title', 'L-21门锁可靠性要求');
+        return view('datatables.eloquent.l21locker')->with('title', 'L-21门锁可靠性要求');
     }
 
     public function getL21LockerData()
@@ -86,7 +86,7 @@ class EloquentController extends Controller
      */
     public function getHw2802Locker()
     {
-        return view('datatables.eloquent.Hw2802Locker')->with('title', 'HW-2802防水摇把锁');
+        return view('datatables.eloquent.hw2802locker')->with('title', 'HW-2802防水摇把锁');
     }
 
     public function getHw2802LockerData()
@@ -113,7 +113,7 @@ class EloquentController extends Controller
      */
     public function getSmallCircleLocker()
     {
-        return view('datatables.eloquent.SmallCircleLocker')->with('title', '防水小圆锁');
+        return view('datatables.eloquent.smallcirclelocker')->with('title', '防水小圆锁');
     }
 
     public function getSmallCircleLockerData()
@@ -140,7 +140,7 @@ class EloquentController extends Controller
      */
     public function getDkba04804078Locker()
     {
-        return view('datatables.eloquent.dkba04804078Locker')->with('title', 'DKBA04804078扣锁');
+        return view('datatables.eloquent.dkba04804078locker')->with('title', 'DKBA04804078扣锁');
     }
 
     public function getDkba04804078LockerData()

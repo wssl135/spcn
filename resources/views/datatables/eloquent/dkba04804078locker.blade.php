@@ -55,16 +55,16 @@
             processing: true,
             searching: true,
             serverSide: true,
-            aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
-            ajax: '{{ url("eloquent/basic-data") }}'
+            aLengthMenu: [[10,20,50,100,-1],[10,20,50,100,"All"]],
+            ajax: '{{ url("eloquent/dkba04804078-locker-data") }}'
         });
         $('#product-table').DataTable({
             processing: true,
             searching: true,
             serverSide: true,
             bLengthChange: true,
-            aLengthMenu: [[25,50,75,100,-1],[25,50,75,100,"All"]],
-            ajax: '{{ url("eloquent/product-data") }}'
+            aLengthMenu: [[10,20,50,100,-1],[10,20,50,100,"All"]],
+            ajax: '{{ url("eloquent/dkba04804078-locker-product-data") }}'
         });
     });
 @endsection

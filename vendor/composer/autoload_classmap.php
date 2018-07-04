@@ -7,10 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddDomainToLockersTable' => $baseDir . '/database/migrations/2018_07_02_173353_add_domain_to_lockers_table.php',
+    'AddDomainToShieldsTable' => $baseDir . '/database/migrations/2018_07_03_171253_add_domain_to_shields_table.php',
     'AddUserSoftDelete' => $baseDir . '/database/migrations/2016_10_13_000104_add_user_soft_delete.php',
     'CreateLockersTable' => $baseDir . '/database/migrations/2018_07_01_120624_create_lockers_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreatePostsTable' => $baseDir . '/database/migrations/2015_05_06_022458_create_posts_table.php',
+    'CreateShieldsTable' => $baseDir . '/database/migrations/2018_07_03_170917_create_shields_table.php',
     'CreateTagsTables' => $baseDir . '/database/migrations/2016_10_22_004452_create_tags_tables.php',
     'CreateUserPostTable' => $baseDir . '/database/migrations/2016_10_12_091446_create_user_post_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',

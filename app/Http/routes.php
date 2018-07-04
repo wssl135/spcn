@@ -21,6 +21,7 @@ Route::get('services/two-datatables/posts', 'ServiceController@getPostsDataTable
 
 Route::controllers([
     'auth'       => 'Auth\AuthController',
+    'shield'     => 'ShieldController',   
     'password'   => 'Auth\PasswordController',
     'fluent'     => 'FluentController',
     'eloquent'   => 'EloquentController',

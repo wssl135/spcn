@@ -14,4 +14,23 @@
             </ul>
         </div>
     </li>
+    <li>
+        <a class="sidebar-list-title block" data-toggle="collapse" data-target="#shield">屏蔽材料</a>
+        <div id="shield" class="collapse collapse-top in">
+            <ul class="list-sub-items">
+                <li><a class="keyword {!! Request::is('shield/fabric') ? 'active' : '' !!}" href="{!! url('shield/fabric') !!}">导电布</a></li>
+                <li><a class="keyword {!! Request::is('shield/plate') ? 'active' : '' !!}" href="{!! url('shield/plate') !!}">波导板</a></li>
+                <li><a class="keyword {!! Request::is('shield/finger') ? 'active' : '' !!}" href="{!! url('shield/finger') !!}">屏蔽簧片</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a class="sidebar-list-title block" data-toggle="collapse" data-target="#rubber">导电橡胶</a>
+        <div id="rubber" class="collapse collapse-top in">
+            <ul class="list-sub-items">
+                <li><a class="keyword {!! Request::is('rubber/conductive') ? 'active' : '' !!}" href="{!! url('rubber/conductive') !!}">导电布</a></li>
+                <li><a class="keyword {!! Request::is('rubber/fip') ? 'active' : '' !!}" href="{!! url('rubber/fip') !!}">FIP导电胶</a></li>
+            </ul>
+        </div>
+    </li>
 </ul>

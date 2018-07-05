@@ -7,13 +7,13 @@
         
         <h4>Quick Links</h4>
         <ul>
-            <li><a href="https://datatables.net/reference/option/ajax">Ajax Options</a></li>
-            <li><a href="https://datatables.net/reference/option/columns">Columns Options</a></li>
-            <li><a href="https://datatables.net/examples/index">Examples</a></li>
-            <li><a href="https://datatables.net/examples/ajax/index.html">Ajax Examples</a></li>
-            <li><a href="https://datatables.net/examples/server_side/">Server-side Processing</a></li>
-            <li><a href="https://datatables.net/extensions/index">Extensions</a></li>
-            <li><a href="https://datatables.net/forums/">Forum</a></li>
+            <li><a href="https://datatables.net/reference/option/ajax" target="_blank">Ajax Options</a></li>
+            <li><a href="https://datatables.net/reference/option/columns" target="_blank">Columns Options</a></li>
+            <li><a href="https://datatables.net/examples/index" target="_blank">Examples</a></li>
+            <li><a href="https://datatables.net/examples/ajax/index.html" target="_blank">Ajax Examples</a></li>
+            <li><a href="https://datatables.net/examples/server_side/" target="_blank">Server-side Processing</a></li>
+            <li><a href="https://datatables.net/extensions/index" target="_blank">Extensions</a></li>
+            <li><a href="https://datatables.net/forums/" target="_blank">Forum</a></li>
         </ul>
     </div>
 </div>

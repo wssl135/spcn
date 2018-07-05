@@ -11,7 +11,7 @@
         <meta name="description" content="jQuery Datatables API for Laravel 4 and Laravel 5">
     @endif
 
-    <title>二级物料SPCN测试项目 {{ isset($title) ? " | $title" : "" }}</title>
+    <title>供应商信息管理平台 {{ isset($title) ? " | $title" : "" }}</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/demo.css') }}" rel="stylesheet">
@@ -44,14 +44,14 @@
             </button>
             <a class="navbar-brand" href="{{ url('/') }}">
                 <span class="dt-icon"><i class="fa fa-th-list"></i></span>
-                二级物料测试项目</a>
+                供应商信息管理平台</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="https://github.com/yajra/laravel-datatables"><strong><i class="fa fa-github"></i>
+                <li><a href="https://github.com/yajra/laravel-datatables" target="_blank"><strong><i class="fa fa-github"></i>
                             测试项目分类</strong></a></li>
-                <li><a href="https://yajrabox.com/docs/laravel-datatables/6.0"><strong>Documentation</strong></a></li>
+                <li><a href="https://yajrabox.com/docs/laravel-datatables/6.0" target="_blank"><strong>Documentation</strong></a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right navbar-custom">
